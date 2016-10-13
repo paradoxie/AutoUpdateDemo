@@ -3,7 +3,7 @@
           package="com.paradoxie.autoupdatedemo">
     <!-- 网络 -->
     <uses-permission android:name="android.permission.INTERNET"/>
-    <!-- 允许写入外部存储 -->
+    <!-- 允许写入外部存储，此为危险权限，此处声明之后还需要在代码里动态申请一次 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
@@ -19,6 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".BuglyUpdateActivity"/>
+        <!--腾讯bugly自动更新-->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:theme="@android:style/Theme.Translucent"/>
     </application>
 
 </manifest>
