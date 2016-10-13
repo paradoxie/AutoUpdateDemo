@@ -7,9 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.tbruyelle.rxpermissions.RxPermissions;
-
 import rx.functions.Action1;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {

@@ -29,7 +29,7 @@ import java.net.URL;
 
 /**
  * User: xiehehe
- * Date: 2016-08-22
+ * Date: 2016-10-12
  * Time: 20:33
  * FIXME
  */
@@ -77,7 +77,7 @@ public class UpdateManager {
     }
 
     /**
-     * 判断是否有更新
+     * 判断是否有更新，需要跟后台产生信息交互
      * @return
      */
     private boolean isUpdate() {
@@ -86,6 +86,7 @@ public class UpdateManager {
 
         // 调用方法获取服务器可用版本信息，此处模拟为大于当前版本的定值
         int serviceCode = 4;
+
         // 版本判断
         if (serviceCode > versionCode) {
             return true;
